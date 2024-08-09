@@ -8,6 +8,7 @@ public class PMain {
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/constructor/PersonConfig.xml");
 		Person p1 = (Person) context.getBean("pers1");
 		System.out.println(p1);
-
+        Addition add1=(Addition)context.getBean("add");
+        add1.sum();
 	}
 }

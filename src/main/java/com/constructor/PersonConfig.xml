@@ -7,12 +7,16 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 	<bean class="com.constructor.Certi" name="cert">
-	<constructor-arg value="Btech Cse"  />
+		<constructor-arg value="Btech Cse" />
 	</bean>
 	<bean class="com.constructor.Person" name="pers1">
 		<constructor-arg value="Advika" />
 		<constructor-arg value="123456" />
 		<constructor-arg value="Lucknow" />
-		<constructor-arg ref="cert"  />
+		<constructor-arg ref="cert" />
+	</bean>
+	<bean class="com.constructor.Addition" name="add">
+		<constructor-arg value="12" />
+		<constructor-arg value="23" />
 	</bean>
 </beans>
