@@ -1,6 +1,5 @@
 package com.constructor;
 
-import java.lang.*;
 
 public class Addition {
 	private int a;
@@ -21,7 +20,7 @@ public class Addition {
 	public Addition(String a, String b) {
 		this.a = Integer.parseInt(a);
 		this.b = Integer.parseInt(b);
-		System.out.println("Constructor int,int");
+		System.out.println("Constructor s,int");
 	}
 
 	public void sum() {
