@@ -14,5 +14,5 @@
 			<value>234</value>
 		</property>
 	</bean>
-	<bean class="com.autowiring.Independent" name="obj2" autowire="byName" />
+	<bean class="com.autowiring.Independent" name="obj2" autowire="constructor" />
 </beans>

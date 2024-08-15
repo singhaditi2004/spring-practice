@@ -13,6 +13,6 @@ public class Main {
          System.out.println(col1.getCustomers());
          System.out.println(col1.getStock());
          System.out.println(col1.getProp());
-         
+         System.out.println(col1.getAddress().getClass().getName());
 	}
 }

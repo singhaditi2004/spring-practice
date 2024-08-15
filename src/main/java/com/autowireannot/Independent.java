@@ -1,6 +1,11 @@
-package com.autowiring;
+package com.autowireannot;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Independent {
+	@Autowired
+	@Qualifier("depvar1")
 	private Dependent depvar;
 
 	@Override
@@ -19,8 +24,9 @@ public class Independent {
 
 	public void setDepvar(Dependent depvar) {
 		this.depvar = depvar;
+		System.out.println("Set");
 	}
-
+	
 	public Independent(Dependent depvar) {
 		super();
 		this.depvar = depvar;
